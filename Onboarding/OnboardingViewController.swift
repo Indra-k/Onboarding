@@ -31,7 +31,7 @@ class OnboardingViewController: UIViewController {
         holderView.addSubview(scrollView)
         
         let titles = ["Welcome", "Almost There", "There You Go"]
-        for x in 0..<3 {
+        for x in 0..<1 {
             let pageView = UIView(frame: CGRect(x: CGFloat (x) * holderView.frame.size.width, y: 0, width: holderView.frame.size.width, height: holderView.frame.size.height))
             scrollView.addSubview(pageView)
             
@@ -54,7 +54,7 @@ class OnboardingViewController: UIViewController {
             button.setTitleColor(.white, for: .normal)
             button.backgroundColor = .black
             button.setTitle("Continue", for: .normal)
-            if x == 2 {
+            if x == 0 {
                 button.setTitle("Get Started", for: .normal)
             }
             button.addTarget(self, action: #selector(didTapButton(_:)), for: .touchUpInside)
@@ -62,13 +62,13 @@ class OnboardingViewController: UIViewController {
             pageView.addSubview(button)
         }
         
-        scrollView.contentSize = CGSize(width: holderView.frame.size.width*3, height: 0)
+        scrollView.contentSize = CGSize(width: holderView.frame.size.width*1, height: 0)
         scrollView.isPagingEnabled = true
         
     }
     
     @objc func didTapButton(_ button: UIButton) {
-        guard button.tag < 3 else {
+        guard button.tag < 1 else {
             //dismiss
             Core.shared.isNotNewUser()
             dismiss(animated: true, completion: nil)

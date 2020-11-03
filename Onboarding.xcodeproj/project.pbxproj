@@ -14,6 +14,7 @@
 		A9154A432551282300653572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9154A422551282300653572 /* Assets.xcassets */; };
 		A9154A462551282300653572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9154A442551282300653572 /* LaunchScreen.storyboard */; };
 		A9154A4F25512A3500653572 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9154A4E25512A3500653572 /* OnboardingViewController.swift */; };
+		A9C9B87125514315001CA1EF /* I'm Blue.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A9C9B87025514315001CA1EF /* I'm Blue.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A9154A452551282300653572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9154A472551282300653572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9154A4E25512A3500653572 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A9C9B87025514315001CA1EF /* I'm Blue.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "I'm Blue.mp4"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		A9154A382551282200653572 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				A9C9B87025514315001CA1EF /* I'm Blue.mp4 */,
 				A9154A392551282200653572 /* AppDelegate.swift */,
 				A9154A3B2551282200653572 /* SceneDelegate.swift */,
 				A9154A3D2551282200653572 /* ViewController.swift */,
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C9B87125514315001CA1EF /* I'm Blue.mp4 in Resources */,
 				A9154A462551282300653572 /* LaunchScreen.storyboard in Resources */,
 				A9154A432551282300653572 /* Assets.xcassets in Resources */,
 				A9154A412551282200653572 /* Main.storyboard in Resources */,

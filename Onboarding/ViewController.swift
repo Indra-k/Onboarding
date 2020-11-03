@@ -5,13 +5,33 @@
 //  Created by Indra Kurniawan on 03/11/20.
 //
 
+import AVKit
+import AVFoundation
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "I'm Blue", ofType: ".mp4")!))
+        
+        //this will pop up iOS Player
+//        let vc = AVPlayerViewController()
+//        vc.player = player
+//        present(vc, animated: true)
+        
+        //this for customize
+        let layer = AVPlayerLayer(player: player)
+        layer.frame = view.bounds
+        layer.videoGravity = .resizeAspectFill
+        view.layer.addSublayer(layer)
+        player.volume = 3
+        player.play()
     }
     
     override func viewDidLayoutSubviews() {
